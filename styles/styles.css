@@ -21,7 +21,8 @@ header{
     font-size: 40px;
     display: flex;
     color: white;
-    padding: 2px 16px;
+    padding: 2px 24px;
+    font-weight: 500;
 }
 .banner{
     position: relative;
@@ -63,5 +64,6 @@ header{
     }
     footer p{
         padding: 10px;
+        letter-spacing: 6px;
     }
 /*Fin Footer*/
