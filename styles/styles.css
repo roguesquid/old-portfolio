@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Inicio Header*/
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.heat{
+    top: 8vh;
+    position: absolute;
+    border-radius: 32px;
+    background: rgba(0, 0, 0, .35);
+    z-index: 2;
+}
+
+.heat h1{
+    font-size: 40px;
+    display: flex;
+    color: white;
+    padding: 2px 16px;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.mfoto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: calc(50vh - 232px);
+    box-shadow: 16px;
+}
+.mfoto img{
+    top: 16vh;
+    border-radius: 50%;
+    width: 362px;
+    height: 362px;
+}
+
+/*Fin Header*/
+
+/*Inicio Card section*/
+/*Fin Card section*/
+
+/*Inicio Footer*/
+    footer{
+        position: absolute;
+        background: #0E101D;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        bottom: 0;
+        width: 100%;
+    }
+    footer p{
+        padding: 10px;
+    }
+/*Fin Footer*/
