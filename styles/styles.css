@@ -39,8 +39,8 @@ header{
 }
 .mfoto img{
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
+    width: 37vh;
+    height: 37vh;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.35);
 }
 
@@ -61,7 +61,7 @@ header{
     }
     .card{
         border-radius:  2px;
-        margin: 48px;
+        margin: 32px;
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.35);
         position: relative;
     }
@@ -136,6 +136,7 @@ header{
 
 /*Inicio Footer*/
     footer{
+        margin-top: 32px;
         background: #0E101D;
         color: white;
         display: flex;
@@ -148,6 +149,14 @@ header{
         padding: 10px;
     }
     /*Fin Footer*/
+@media screen and (max-width: 1366px){
+    .heat{
+        top: 8vh;
+    }
+    .mfoto{
+        top: 25vh;
+    }
+}
 @media screen and (max-width: 1024px){
     .heat h1{
         font-size: 50px;
