@@ -27,7 +27,7 @@ header{
 .banner{
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 49vh;
     object-fit: cover;
 }
 .mfoto{
@@ -35,35 +35,206 @@ header{
     display: flex;
     width: 100%;
     justify-content: center;
-    top: calc(50vh - 232px);
-    box-shadow: 16px;
+    top: 19vh;
 }
 .mfoto img{
-    top: 16vh;
     border-radius: 50%;
-    width: 362px;
-    height: 362px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.35);
 }
 
 /*Fin Header*/
 
-/*Inicio Card section*/
-/*Fin Card section*/
+/*Inicio main section*/
+    main h2{
+        margin-top: 14vh;
+        font-size: 48px;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .main{
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(auto-fill, 50vh);
+        justify-content: center;
+    }
+    .card{
+        border-radius:  2px;
+        margin: 48px;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.35);
+        position: relative;
+    }
+    .card img{
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        max-width: 100%;
+    }
+    .card h3{
+        text-align: center;
+        margin: 8px;
+    }
+    .card p{
+        text-align: justify;
+        padding: 0px 12px;
+    }
+    /*Badge*/
+    .badge{
+        margin-left: 16px;
+        margin: 2px 0px 8px 16px;
+        display: inline-block;
+        max-width: auto;
+        color: white;
+        border-radius: 3px;
+        height: 16px;
+        font-size: 14px;
+        padding: 2px 4px 6px 4px;
+    }
+    .badge span{
+     font-size: 16px;
+     font-weight: 600;
+    }
+    /*/badge*/
+    /*Boton ver mas*/
+    .card form{
+        display: flex;
+        justify-content: center;
+    }
+    .card form a{
+        display: flex;
+        justify-content: center;
+        max-width: 100px;
+        border: 2px solid #B50215;
+        padding: 3px 10px;
+        background: transparent;
+        border-radius: 4px;
+        color: #B50215;
+        font-weight: 700;
+        text-decoration: none;
+        margin: 15px 12px 0px 12px;
+        transition-property: background, color;
+        transition-duration: .3s
+    }
+
+    .card form a:hover{
+        background: #b50215;
+        color: white;
+    }
+    /*Fin boton ver mas*/
+    /*fecha*/
+    .fecadi{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .fecard{
+        padding: 0px 8px 8px 8px;
+        color:#737373;
+        font-weight: 600;
+    }
+    /*Fin Fecha*/
+/*Fin main section*/
 
 /*Inicio Footer*/
     footer{
-        position: absolute;
         background: #0E101D;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 24px;
-        bottom: 0;
         width: 100%;
     }
     footer p{
         padding: 10px;
-        letter-spacing: 6px;
     }
-/*Fin Footer*/
+    /*Fin Footer*/
+@media screen and (max-width: 1024px){
+    .heat h1{
+        font-size: 50px;
+    }
+    .banner{
+        height: 38vh;
+    }
+    .mfoto{
+        top: 19vh;
+    }
+    main h2{
+        margin-top: 12.5vh;
+        margin-bottom: 2vh;
+    }
+    .main{
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, 50vw);
+    }
+    .card{
+        margin: 32px 24px 32px 24px;
+    }
+}
+@media screen and (max-width: 768px){
+    main h2{
+        margin-top: 16vh;
+    }
+    .mfoto{
+        top: 24.5vh;
+    }
+    .main{
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, 86vw);
+    }
+    .card h3{
+        font-size: 24px;
+    }
+    .badge{
+        font-size: 20px;
+        padding: 0px 4px 10px 4px;
+    }
+    .card p{
+        font-size: 20px;
+    }
+    .card form a{
+        font-size: 20px;
+    }
+    .fecard{
+        font-size: 20px;
+        padding: 0px 16px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .mfoto{
+        top: 10.80vh;
+    }
+    .mfoto img{
+        width: 28.5vh;
+        height: 28.5vh;
+    }
+    .heat{
+        top:3.75vh;
+    }
+    .heat h1{
+        font-size: 20px;
+    }
+    .banner{
+        height: 25vh;
+    }
+    /*Fin Header*/
+    /*main*/
+    main h2{
+        font-size: 32px;
+        margin-top: 17.5vh;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .main{
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, 86vw);
+    }
+    .card:nth-child(1){
+        margin-top: 24px;
+    }
+    .card{
+        margin:16px 0px;
+    }
+    /*/main*/
+}
