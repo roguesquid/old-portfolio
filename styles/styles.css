@@ -170,7 +170,7 @@ header{
         top: 19vh;
     }
     main h2{
-        margin-top: 12.5vh;
+        margin-top: 20vh;
         margin-bottom: 2vh;
     }
     .main{
@@ -182,11 +182,14 @@ header{
     }
 }
 @media screen and (max-width: 768px){
+    .heat h1{
+        font-size: 36px;
+    }
     main h2{
         margin-top: 16vh;
     }
     .mfoto{
-        top: 24.5vh;
+        top: 18vh;
     }
     .main{
         width: 100%;
