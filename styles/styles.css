@@ -11,7 +11,7 @@ header{
 
 .bienvenida{
     animation-name: bajar;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     top: 8vh;
     position: absolute;
     border-radius: 32px;
@@ -39,7 +39,7 @@ header{
 }
 .mfoto{
     animation-name: bajar;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     position: absolute;
     display: flex;
     width: 100%;
@@ -55,7 +55,7 @@ header{
 @keyframes bajar {
     from{
         transform: translateY(-6vh);
-        opacity: 0.4;
+        opacity: 0.3;
     }
     to{
         transform: translateY(0vh);
